@@ -57,6 +57,8 @@ p {
 */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .nav-list-item {
   font-weight: 500;
@@ -64,6 +66,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-header-color);
+  display: inline-block;
 }
 .nav-list-item:hover,
 .nav-list-item:focus,
@@ -123,11 +126,14 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  min-width: 169px;
 
   /* WHITE */
 
   color: var(--white-background-color);
   background: var(--primary-brand-color);
+  border-radius: 4px;
 }
 .button-order:hover,
 .button-order:focus,
@@ -199,4 +205,50 @@ p {
   /* NAVY BLUE */
 
   color: var(--main-header-color);
+}
+/**
+  |============================
+  | reset start
+  |============================
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
