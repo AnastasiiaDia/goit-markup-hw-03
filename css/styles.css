@@ -11,18 +11,17 @@ body {
   --pressed-state-color: #404bbf;
   --white-background-color: #ffffff;
 }
-p {
-  color: var(--body-text-color);
-}
+
 .hero {
   background-color: var(--main-header-color);
+  text-align: center;
 }
 .header-one {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
+  padding: 188px 472px 48px 472px;
 
   /* WHITE */
 
@@ -33,10 +32,34 @@ p {
 }
 /**
   |============================
+  | header
+  |============================
+*/
+/*  Making header.page-header a Flex-container and aligning elements  */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  margin-right: auto;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+.menu.nav-list-item {
+}
+
+/**
+  |============================
   | logo
   |============================
 */
 .logo {
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -49,10 +72,12 @@ p {
 .logo-dark {
   /* NAVY BLUE */
   color: var(--main-header-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /**
   |============================
-  | nav-list
+  | menu nav-list
   |============================
 */
 .list {
@@ -67,7 +92,11 @@ p {
   letter-spacing: 0.02em;
   color: var(--main-header-color);
   display: inline-block;
+  margin-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
+
 .nav-list-item:hover,
 .nav-list-item:focus,
 .nav-list-item:active {
@@ -80,6 +109,8 @@ p {
   */
 }
 .address {
+  display: flex;
+  gap: 40px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -89,6 +120,8 @@ p {
 }
 .address-contact {
   color: var(--body-text-color);
+  padding-top: 24px;
+  padding-bottom: 188px;
 }
 .address .address-contact:active,
 .address .address-contact:focus,
@@ -128,6 +161,8 @@ p {
   cursor: pointer;
   padding: 16px 32px;
   min-width: 169px;
+  min-height: 56px;
+  margin-bottom: 188px;
 
   /* WHITE */
 
@@ -158,6 +193,7 @@ p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 
   /* NAVY BLUE */
 
@@ -211,6 +247,7 @@ p {
   | reset start
   |============================
 */
+p,
 h1,
 h2,
 h3,
@@ -219,6 +256,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -251,4 +289,8 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid orange;
+}
+section {
+  padding-bottom: 120px;
 }
