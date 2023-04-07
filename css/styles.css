@@ -10,6 +10,8 @@ body {
   --light: #f4f4fd;
   --pressed-state-color: #404bbf;
   --white-background-color: #ffffff;
+  /* Others */
+  --indent: 24px;
 }
 
 .hero {
@@ -47,8 +49,6 @@ body {
 .header-nav-list {
   display: flex;
   align-items: center;
-}
-.menu.nav-list-item {
 }
 
 /**
@@ -199,6 +199,13 @@ body {
 
   color: var(--main-header-color);
 }
+.about-container {
+  display: flex;
+}
+.about-list {
+  display: flex;
+  gap: 24px;
+}
 .body-text {
   font-weight: 400;
   font-size: 16px;
@@ -219,8 +226,14 @@ body {
 }
 .our-team-item {
   background-color: var(--white-background-color);
+  width: calc((100%-3 * var(--indent)) / 4);
 }
-
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  text-align: center;
+}
 .header-two: {
   font-weight: 700;
   font-size: 36px;
@@ -230,6 +243,15 @@ body {
   text-transform: capitalize;
   --main-header-color: #2e2f42;
 }
+/**
+  |============================
+  | works
+  |============================
+*/
+.works-list-container {
+  display: flex;
+  gap: 24px;
+}
 .header-main-page {
   font-weight: 700;
   font-size: 36px;
@@ -237,6 +259,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 
   /* NAVY BLUE */
 
@@ -291,6 +314,7 @@ button {
   margin: 0 auto;
   outline: 2px solid orange;
 }
-section {
+.section {
   padding-bottom: 120px;
+  padding-top: 120px;
 }
