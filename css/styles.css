@@ -265,14 +265,14 @@ body {
 .team-wrapper {
   padding: 32px 16px;
 }
-.header-two: {
+.header-two {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  --main-header-color: #2e2f42;
+  color: var(--main-header-color);
 }
 
 /**
@@ -331,7 +331,7 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.container {
+. {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -344,9 +344,7 @@ button {
 }
 .footer-section {
   display: flex;
-  padding: 100px; 1020px;
-  padding-right: 
-  padding-top: 188px;
+  padding: 100px 0;  
 }
 .footer-logo {
   margin-bottom: 16px;
