@@ -39,6 +39,7 @@ body {
   |============================
   | header
   |============================
+  
 */
 /*  Making header.page-header a Flex-container and aligning elements  */
 .header-container {
@@ -48,10 +49,14 @@ body {
 .header-nav {
   display: flex;
   margin-right: auto;
+  align-items: center; 
 }
 .header-nav-list {
   display: flex;
   align-items: center;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 /**
@@ -99,6 +104,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.nav-list-item:nth-last-child {margin-right: 0px;}
 
 .nav-list-item:hover,
 .nav-list-item:focus,
