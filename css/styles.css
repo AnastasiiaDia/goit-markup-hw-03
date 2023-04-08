@@ -320,6 +320,9 @@ button {
   .card-set-item {
     width: calc((100% - var(--indent) * (var(--items) - 1 ) / var(--items)));
   }
+  .gallery-list {
+   --items: 3; 
+  }
 
 .visually-hidden {
   position: absolute;
