@@ -12,6 +12,7 @@ body {
   --white-background-color: #ffffff;
   /* Others */
   --indent: 24px;
+  --items: 9;
 }
 
 .hero {
@@ -151,7 +152,12 @@ body {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
 }
-
+.button-list {
+  display: flex;
+  gap: 24px;
+  padding-right: 427px;
+  padding-left: 427px;
+}
 .button-order {
   font-family: inherit;
   font-weight: 500;
@@ -218,6 +224,28 @@ body {
 }
 /**
   |============================
+  | works
+  |============================
+*/
+.works-list-container {
+  display: flex;
+  gap: 24px;
+}
+.header-main-page {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+
+  /* NAVY BLUE */
+
+  color: var(--main-header-color);
+}
+/**
+  |============================
   | our team
   |============================
 */
@@ -246,28 +274,7 @@ body {
   text-transform: capitalize;
   --main-header-color: #2e2f42;
 }
-/**
-  |============================
-  | works
-  |============================
-*/
-.works-list-container {
-  display: flex;
-  gap: 24px;
-}
-.header-main-page {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  margin-bottom: 72px;
 
-  /* NAVY BLUE */
-
-  color: var(--main-header-color);
-}
 /**
   |============================
   | reset start
@@ -297,7 +304,21 @@ img {
 }
 button {
   cursor: pointer;
-}
+ } 
+ /**
+    |============================
+    | Card set
+    |============================
+  */
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+  }
+  .card-set-item {
+    width: calc((100% - var(--indent) * (var(--items) - 1 ) / var(--items));
+  }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -320,4 +341,16 @@ button {
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
+}
+.footer-section {
+  display: flex;
+  padding: 100px; 1020px;
+  padding-right: 
+  padding-top: 188px;
+}
+.footer-logo {
+  margin-bottom: 16px;
+}
+.footer-text {
+  width: 264px;
 }
