@@ -322,6 +322,11 @@ button {
   }
   .gallery-list {
    --items: 3; 
+  
+  }
+  .gallery-section {
+    padding-top: 96px; 
+    padding-bottom: 120px;
   }
 
 .visually-hidden {
