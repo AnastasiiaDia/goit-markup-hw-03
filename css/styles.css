@@ -18,13 +18,15 @@ body {
 .hero {
   background-color: var(--main-header-color);
   text-align: center;
+  padding: 188px 0;
 }
 .header-one {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding: 188px 472px 48px 472px;
+  margin-bottom: 48px;
+  
 
   /* WHITE */
 
@@ -168,7 +170,7 @@ body {
   padding: 16px 32px;
   min-width: 169px;
   min-height: 56px;
-  margin-bottom: 188px;
+
 
   /* WHITE */
 
@@ -316,7 +318,7 @@ button {
     gap: var(--indent);
   }
   .card-set-item {
-    width: calc((100% - var(--indent) * (var(--items) - 1 ) / var(--items));
+    width: calc((100% - var(--indent) * (var(--items) - 1 ) / var(--items)));
   }
 
 .visually-hidden {
@@ -331,7 +333,7 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-. {
+.container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
