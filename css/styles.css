@@ -37,6 +37,7 @@ body {
 .header-nav-list {
   display: flex;
   align-items: center;
+  gap: 40px 
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -277,9 +278,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--light);
 }
-.footer-section {
-  display: flex;
-  padding: 100px 0;  
+.footer--content {
+   padding: 100px 0;  
 }
 .footer-logo {
   display: inline-block;
