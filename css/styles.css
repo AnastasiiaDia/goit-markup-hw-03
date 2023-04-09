@@ -15,7 +15,6 @@ body {
   var(--indent): 24px;
   var(--items): 9;
 } 
-
 .link {
   text-decoration: none;
 }
@@ -367,7 +366,7 @@ button {
   .gallery-list {
    --items: 3; 
    row-gap: 48px;
-  
+   column-gap: 24px;  
   }
   .gallery-section {
     padding-top: 96px; 
