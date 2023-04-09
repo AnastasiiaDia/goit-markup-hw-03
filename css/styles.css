@@ -28,7 +28,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-}
+ }
 .header-nav {
   display: flex;
   margin-right: auto;
@@ -178,6 +178,7 @@ body {
 }
 .about-list {
   display: flex;
+  gap: 24px;
   }
 .about-item {
   width: calc((100%-3*24px)/4);
@@ -303,8 +304,8 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
   text-align: center;
+  gap: 24px;
 }
 .team-wrapper {
   padding: 32px 16px;
