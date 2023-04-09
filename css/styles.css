@@ -138,8 +138,8 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 48px;
   max-width: 496px;
-  
-  
+  margin: 0 auto 48px auto;
+   
 
   /* WHITE */
 
@@ -162,6 +162,7 @@ body {
   color: var(--white-background-color);
   background: var(--primary-brand-color);
   border-radius: 4px;
+  margin: 0 auto;
 }
 .button-order:hover,
 .button-order:focus,
