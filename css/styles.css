@@ -286,6 +286,7 @@ body {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  padding: 0;
 }
 .footer-text {
   max-width: 264px;
@@ -396,11 +397,19 @@ button {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid orange;
-}
+  margin: 0 auto;}
+  /**
+    |============================
+    | outline: 2px solid orange;
+    |============================
+  */
+  
+
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-
+.footer.footer-content.logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
